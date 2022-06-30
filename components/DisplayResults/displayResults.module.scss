@@ -1,0 +1,10 @@
+.grid {
+  // create grid with 4 each column and 5 each row
+  margin-top: 20px;
+
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-gap: 6vw 2vw;
+
+}
