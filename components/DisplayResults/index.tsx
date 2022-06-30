@@ -12,21 +12,24 @@ interface Props {
       searchTerm: string;
       name: string;
       list: object;
+      type: string;
     }
   ];
 }
+
+
 
 const DisplayResults = ({ results, video }: Props) => {
   const [selected, setSelected] = useState<string>("");
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [type, setType] = useState<string>("");
   const [hovered, setHovered] = useState<string>("");
-  const [selectedList, setSelectedList] = useState<object>({});
+  const [selectedList, setSelectedList] = useState<any>({});
 
-  const handleClick = (name: string, searchTerm: string, type: string) => {
+  const handleClick = (name: string, searchTerm: string) => {
     setSelected(name);
     setSearchTerm(searchTerm);
-    setType(type);
+;
   };
 
   const handleHoverEnter = (hovered: any) => {
@@ -61,7 +64,7 @@ const DisplayResults = ({ results, video }: Props) => {
           <Filter
             key={index}
             onClick={(e: ReactEventHandler) =>
-              handleClick(result.name, result.searchTerm, result.type)
+              handleClick(result.name, result.searchTerm)
             }
             selected={selected}
             result={result}
