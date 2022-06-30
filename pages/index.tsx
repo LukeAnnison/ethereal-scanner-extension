@@ -27,8 +27,8 @@ const Home = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Ethereal Scanner</h1>
-        <p>Enter a Tik Tok URL and get results for the related songs and hastags used in the video</p>
-        <p>Click a tag when it appears to show results. Hover over a video to play</p>
+        <p className={styles.text}>Enter a Tik Tok URL and get results for the related songs and hastags used in the video</p>
+        <p className={styles.text}>Click a tag when it appears to show results. Hover over a video to play</p>
 
         <input
           onChange={(e) => handleChange(e)}
