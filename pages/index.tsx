@@ -35,7 +35,7 @@ const Home = () => {
           className={styles.input}
           type="text"
         />
-        <button className={styles.colorChange}onClick={fetchData}>Scan</button>
+        <button className={styles.colorChange}onClick={fetchData}>Scan TikTok</button>
         {loading ? (
           <Rings color="#00BFFF" height={80} width={80} />
         ) : (
@@ -47,7 +47,7 @@ const Home = () => {
       </main>
 
       <footer className={styles.footer}>
-        <a
+        <a className={styles.text}
           href="https://www.etherealkind.com/"
           target="_blank"
           rel="noopener noreferrer"
