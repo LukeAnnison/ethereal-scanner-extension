@@ -2,7 +2,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import styles from "./tikTokVid.module.scss";
-import truncate from "../../utils/truncate";
 import Router, { useRouter } from "next/router";
 
 interface Props {

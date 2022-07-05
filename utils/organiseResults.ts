@@ -1,13 +1,12 @@
 import { forEach } from "lodash";
 
 const organiseResults = (
-    searchTerm: string,
+  searchTerm: string,
   songTitle: string,
   songResults: any,
   hashTags: string[],
   hashtagResults: object
 ) => {
-
   let organisedResults = [
     {
       searchTerm: searchTerm,

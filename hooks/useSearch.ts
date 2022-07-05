@@ -3,9 +3,8 @@ import axios from "axios";
 import { find, forEach, map } from "lodash";
 
 import linkTruncate from "../utils/linkTruncate";
-import countProperties from "../utils/countObject";
 import organiseResults from "../utils/organiseResults";
-import { Router, useRouter } from "next/router";
+
 import getHashtags from "../utils/getHashtags";
 
 const UseSearch = () => {
@@ -46,9 +45,7 @@ const UseSearch = () => {
               hashTagResults.push(hashTagResult.data.data);
             })
           ).then(() => {
-
             setLoading(false);
-
 
             const organisedResults = organiseResults(
               song,
@@ -76,9 +73,7 @@ const UseSearch = () => {
               hashTagResults.push(hashTagResult.data.data);
             })
           ).then(() => {
-
             setLoading(false);
-
 
             const organisedResults = organiseResults(
               song,
@@ -87,10 +82,7 @@ const UseSearch = () => {
               descriptionTags,
               hashTagResults
             );
-            window.sessionStorage.setItem(
-              "organisedResults",
-              JSON.stringify(organisedResults)
-            );
+
             setResults(organisedResults);
           });
         }

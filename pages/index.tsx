@@ -11,7 +11,6 @@ const Home = () => {
   const {
     video,
     results,
-    search,
     handleChange,
     fetchData,
     loading,
