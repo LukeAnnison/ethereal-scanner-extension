@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  height: 500px;
+  width: 300px;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  color: rgb(72, 199, 242);
+}

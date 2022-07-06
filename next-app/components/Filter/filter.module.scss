@@ -1,0 +1,38 @@
+.filter {
+    padding: 5px 0;
+    border: 2px;
+    border-radius: 5px;
+    background-color: #a58731;
+    border-color: #00A6FF;
+    border-style: solid;
+    border-width: 2px;
+    margin: 10px;
+
+}
+
+.selected {
+    padding: 5px 0;
+    border: 2px;
+    border-radius: 5px;
+    background-color: black;
+    border-color: purple;
+    border-style: solid;
+    border-width: 2px;
+    margin: 10px;
+
+}
+
+.h1Selected {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
